@@ -62,7 +62,7 @@ func (p *COCOProvider) GetEmailAddress(s *SessionState) (string, error) {
 	req.Header = getCOCOHeader(s.AccessToken)
 
 	type result struct {
-		Email string
+		username string
 	}
 	var r result
 	err = api.RequestJson(req, &r)
@@ -70,7 +70,7 @@ func (p *COCOProvider) GetEmailAddress(s *SessionState) (string, error) {
 		return "", err
 	}
 	if r.username == "" {
-		return "", errors.New("no email")
+		return "", errors.New("no username")
 	}
 	return r.username, nil
 }
