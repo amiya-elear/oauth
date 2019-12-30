@@ -1,7 +1,7 @@
 package api
 
 import (
-	"github.com/amiya-elear/go-simplejson"
+	"github.com/bitly/go-simplejson"
 	"github.com/bmizerany/assert"
 	"io/ioutil"
 	"net/http"

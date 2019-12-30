@@ -3,8 +3,8 @@ package providers
 import (
 	"errors"
 	"fmt"
-	"github.com/amiya-elear/go-simplejson"
-	"github.com/amiya-elear/oauth2_proxy/api"
+	"github.com/bitly/go-simplejson"
+	"github.com/amiya-elear/oauth/api"
 	"log"
 	"net/http"
 	"net/url"
