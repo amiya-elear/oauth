@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/bitly/oauth2_proxy/api"
+	"github.com/amiya-elear/oauth/api"
 )
 
 type MyUsaProvider struct {
